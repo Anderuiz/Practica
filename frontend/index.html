@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM_DB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>CRM</h1>
+
+  <h2>Cargar archivo</h2>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="archivo" accept=".txt,.csv" required>
+    <select name="Nombres" required>
+      <option value="">Seleccionar Nombres</option>
+    </select>
+    <select name="Apellidos" required>
+      <option value="">Seleccionar Apellidos</option>
+    </select>
+    <select name="Telefono" required>
+      <option value="">Seleccionar Telefono</option>
+    </select>
+    <select name="Direccion" required>
+      <option value="">Seleccionar Direccion</option>
+    </select>
+    <button type="submit">Cargar</button>
+  </form>
+
+  <h2>Consultas en la base de datos</h2>
+  <button id="totalRegistrosBtn">Total de registros cargados</button>
+  <button id="registrosFechaBtn">Registros cargados en un rango de fecha</button>
+  <button id="buscarNombreBtn">Buscar nombre específico</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
